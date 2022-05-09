@@ -1,0 +1,40 @@
+@use "../base/colors";
+
+body {
+  margin: 0;
+  width: 100%;
+  font-family: helvetica;
+  background-color: colors.$font-primary;
+}
+
+.header {
+  height: 85px;
+  width: 100%;
+  position: fixed;
+  background-color: #cf1d1dbf;
+  z-index: 1;
+  font-family: helvetica;
+  font-size: 22px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  width: 75px;
+  float: left;
+  margin-left: 10px;
+  border-radius: 100px;
+}
+
+button.menu {
+  margin-right: 10px;
+  border: 0px;
+  background: transparent;
+  cursor: pointer;
+  img {
+    width: 35px;
+  }
+}
