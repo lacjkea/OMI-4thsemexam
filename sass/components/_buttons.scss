@@ -1,0 +1,40 @@
+@use "../base/colors";
+@use "../base/fonts";
+
+a.link-button {
+  padding-top: 3rem;
+  border: 0;
+  background: none;
+  font-size: 1.4rem;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 500;
+  color: colors.$base;
+  color: colors.$font-secondary;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  display: inline-block;
+  position: relative;
+  font-size: 1rem;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+.link-button::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  display: block;
+  background: none repeat scroll 0 0 transparent;
+  height: 2px;
+  width: 0;
+  background: colors.$primary;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+}
+
+.link-button:hover::after {
+  width: 100%;
+  left: 0;
+}
