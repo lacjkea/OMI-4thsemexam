@@ -51,7 +51,7 @@
   }
 }
 
-#container-3 {
+#container-4 {
   background: colors.$font-secondary; /* fallback colour. Make sure this is just one solid colour. */
   background-position: center;
   background-attachment: fixed;
@@ -89,9 +89,9 @@
     background-position: center;
   }
 
-  section#section-3 {
+  section#section-4 {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;

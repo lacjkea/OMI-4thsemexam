@@ -81,7 +81,7 @@ h3 {
   font-family: "Barlow", sans-serif;
   font-weight: normal;
   font-size: 1.3rem;
-  margin: 0 10rem 0 0;
+  margin: 0 15rem 0 0;
 }
 nav {
   ul {
@@ -123,22 +123,6 @@ nav {
   a:hover::after {
     width: 100%;
     left: 0;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  button.menu {
-    display: block;
-  }
-  nav {
-    display: none;
-  }
-
-  h1 {
-    font-size: 3rem;
-  }
-  h2 {
-    font-size: 1rem;
   }
 }
 
@@ -234,5 +218,41 @@ nav {
   }
   100% {
     opacity: 1;
+  }
+}
+
+// media-query
+
+@media only screen and (max-width: 600px) {
+  button.menu {
+    display: block;
+  }
+  nav {
+    display: none;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 1rem;
+  }
+
+  h3 {
+    margin: 0;
+  }
+
+  #container-4 {
+    section#section-4,
+    article.service {
+      gap: 30px !important;
+      flex-direction: column !important;
+    }
+    .service-icon-1,
+    .service-icon-2,
+    .service-icon-3 {
+      width: 100px !important;
+      height: 100px !important;
+    }
   }
 }
