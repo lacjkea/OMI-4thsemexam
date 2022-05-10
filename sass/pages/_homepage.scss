@@ -146,11 +146,13 @@ $animationSpeed: 40s;
 // Styling
 .slider {
   background: white;
-  height: 100px;
+  height: 150px;
   margin: auto;
   overflow: hidden;
   position: relative;
   width: 960px;
+  display: flex;
+  align-items: center;
 
   &::before,
   &::after {
