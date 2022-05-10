@@ -1,0 +1,30 @@
+@use "../base/colors";
+@use "../base/fonts";
+
+#section-1 {
+  width: 100%;
+  max-width: 1000px;
+  height: 500px;
+  padding-top: 200px;
+  padding-bottom: 100px;
+}
+
+#container-1 {
+  background: colors.$primary; /* fallback colour. Make sure this is just one solid colour. */
+  background: -webkit-linear-gradient(rgba(160, 165, 209, 0), colors.$base),
+    url("/public/assets/mountain.jpg");
+  background: linear-gradient(rgba(160, 165, 209, 0), colors.$base),
+    url("/public/assets/mountain.jpg"); /* The least supported option. */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+
+  img {
+    object-fit: cover;
+  }
+  h1,
+  h2 {
+    color: colors.$font-primary;
+  }
+}

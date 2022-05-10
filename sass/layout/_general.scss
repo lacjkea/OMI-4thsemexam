@@ -1,9 +1,10 @@
 @use "../base/colors";
+@use "../base/fonts";
 
 body {
   margin: 0;
   width: 100%;
-  font-family: helvetica;
+  font-family: "Barlow", sans-serif;
   background-color: colors.$font-primary;
 }
 
@@ -11,15 +12,14 @@ body {
   height: 85px;
   width: 100%;
   position: fixed;
-  background-color: #cf1d1dbf;
   z-index: 1;
-  font-family: helvetica;
   font-size: 22px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  background-color: colors.$font-primary;
 }
 
 .logo img {
@@ -37,4 +37,29 @@ button.menu {
   img {
     width: 35px;
   }
+}
+
+.container {
+  width: 100%;
+  background-color: red;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.section {
+  margin: 0 4rem 0 4rem;
+}
+
+h1 {
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: bold;
+  font-size: 5rem;
+}
+
+h2 {
+  font-family: "Barlow", sans-serif;
+  font-weight: 100;
+  font-size: 1.5rem;
 }
