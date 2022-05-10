@@ -46,3 +46,13 @@ function hover(element) {
 function unhover(element) {
   document.querySelector(`h4#${element.target.id}`).classList.remove("blur");
 }
+
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  freeMode: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});

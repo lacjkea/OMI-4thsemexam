@@ -123,6 +123,65 @@
   }
 }
 
+#container-5 {
+  background-color: colors.$base;
+  height: 600px;
+  display: flex;
+  align-content: center;
+
+  .swiper-slide {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+  }
+  a {
+    text-decoration: none;
+    font-size: 3rem;
+    font-weight: bold;
+    color: colors.$font-primary;
+    text-shadow: 2px 4px 3px rgba(179, 175, 175, 0.3);
+  }
+
+  #slide-1 {
+    background-image: url("/public/assets/illumkey.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.swiper {
+  width: 100%;
+  height: 500px;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 @mixin white-gradient {
   background: linear-gradient(
     to right,
@@ -185,6 +244,22 @@ $animationSpeed: 40s;
     img {
       height: 100px;
       width: 250px;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #container-4 {
+    section#section-4,
+    article.service {
+      gap: 30px !important;
+      flex-direction: column !important;
+    }
+    .service-icon-1,
+    .service-icon-2,
+    .service-icon-3 {
+      width: 100px !important;
+      height: 100px !important;
     }
   }
 }

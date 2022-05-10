@@ -21,6 +21,7 @@ body {
   align-items: center;
   background-color: colors.$font-primary;
   align-content: center;
+  z-index: 9;
 }
 
 .logo img {
@@ -240,19 +241,5 @@ nav {
 
   h3 {
     margin: 0;
-  }
-
-  #container-4 {
-    section#section-4,
-    article.service {
-      gap: 30px !important;
-      flex-direction: column !important;
-    }
-    .service-icon-1,
-    .service-icon-2,
-    .service-icon-3 {
-      width: 100px !important;
-      height: 100px !important;
-    }
   }
 }
