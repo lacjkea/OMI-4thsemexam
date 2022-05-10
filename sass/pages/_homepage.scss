@@ -35,7 +35,7 @@
       colors.$font-primary
     ),
     url("/public/assets/woman-smile.jpg");
-  background: linear-gradient(rgba(255, 255, 255, 0.103), colors.$font-primary),
+  background: linear-gradient(rgba(255, 255, 255, 0.151), colors.$font-primary),
     url("/public/assets/woman-smile.jpg"); /* The least supported option. */
   background-repeat: no-repeat;
   background-position: center;
@@ -52,19 +52,73 @@
 }
 
 #container-3 {
-  background: colors.$primary; /* fallback colour. Make sure this is just one solid colour. */
-  background: url("/public/assets/leather.jpg");
-
-  background-repeat: no-repeat;
+  background: colors.$font-secondary; /* fallback colour. Make sure this is just one solid colour. */
   background-position: center;
   background-attachment: fixed;
-  background-size: cover;
 
   img {
     object-fit: cover;
   }
   h2,
   h3 {
+    color: colors.$font-primary;
+  }
+
+  .service-icon-1 {
+    width: 150px;
+    height: 150px;
+    background: url("/public/assets/creative.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+  .service-icon-2 {
+    width: 150px;
+    height: 150px;
+    background: url("/public/assets/marketing.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+  .service-icon-3 {
+    width: 150px;
+    height: 150px;
+    background: url("/public/assets/development.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+
+  section#section-3 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    gap: 10rem;
+  }
+
+  article.service {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10rem;
+    a {
+      text-decoration: none;
+    }
+  }
+  .article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    background: transparent;
+  }
+  h4 {
+    font-weight: normal;
+    font-size: 1.2rem;
+    text-align: center;
     color: colors.$font-primary;
   }
 }

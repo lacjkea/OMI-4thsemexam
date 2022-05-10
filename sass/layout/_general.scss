@@ -141,3 +141,98 @@ nav {
     font-size: 1rem;
   }
 }
+
+// animation
+
+.article:hover {
+  background: linear-gradient(to left, transparent 50%, black 61%) right;
+  background-size: 200%;
+  transition: 0.5s ease-out;
+}
+
+.hover {
+  animation-name: hover;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes hover {
+  from {
+    font-size: 5vw;
+  }
+
+  to {
+    font-size: 6vw;
+  }
+}
+
+.wave {
+  animation-name: wave;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+}
+
+@keyframes wave {
+  0% {
+    opacity: 0.5;
+  }
+
+  25% {
+    opacity: 0.3;
+  }
+
+  50% {
+    opacity: 0.9;
+  }
+
+  750% {
+    opacity: 0.1;
+  }
+
+  100% {
+    opacity: 0.5;
+  }
+}
+
+.blur {
+  color: #fff;
+  text-transform: uppercase;
+  animation: blur 1s ease-out 1;
+  text-shadow: 0px 0px 5px #fff, 0px 0px 7px #fff;
+}
+
+@keyframes blur {
+  from {
+    text-shadow: 0px 0px 10px #fff, 0px 0px 10px #fff, 0px 0px 25px #fff,
+      0px 0px 25px #fff, 0px 0px 25px #fff, 0px 0px 25px #fff, 0px 0px 25px #fff,
+      0px 0px 25px #fff, 0px 0px 50px #fff, 0px 0px 50px #fff,
+      0px 0px 50px #7b96b8, 0px 0px 150px #7b96b8, 0px 10px 100px #7b96b8,
+      0px 10px 100px #7b96b8, 0px 10px 100px #7b96b8, 0px 10px 100px #7b96b8,
+      0px -10px 100px #7b96b8, 0px -10px 100px #7b96b8;
+  }
+}
+
+.scroll {
+  animation: scroll 800s linear infinite;
+}
+
+@keyframes scroll {
+  100% {
+    background-position: -3000px 0px;
+  }
+}
+
+.fade {
+  animation: fade 1s ease-out 1;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
