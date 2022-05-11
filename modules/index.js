@@ -22,21 +22,21 @@ function hover(element) {
 
   if (`h4#${element.target.id}` == "h4#creative") {
     document.querySelector("#container-4").classList.remove("scroll");
-    document.querySelector("#container-4").style.backgroundImage =
+    document.querySelector("#container-4").style.background =
       "url('/public/assets/cube.jpg')";
     document.querySelector("#container-4").offsetHeight;
     document.querySelector("#container-4").classList.add("scroll");
   }
   if (`h4#${element.target.id}` == "h4#marketing") {
     document.querySelector("#container-4").classList.remove("scroll");
-    document.querySelector("#container-4").style.backgroundImage =
+    document.querySelector("#container-4").style.background =
       "url('/public/assets/market.jpg')";
     document.querySelector("#container-4").offsetHeight;
     document.querySelector("#container-4").classList.add("scroll");
   }
   if (`h4#${element.target.id}` == "h4#development") {
     document.querySelector("#container-4").classList.remove("scroll");
-    document.querySelector("#container-4").style.backgroundImage =
+    document.querySelector("#container-4").style.background =
       "url('/public/assets/grow.jpg')";
     document.querySelector("#container-4").offsetHeight;
     document.querySelector("#container-4").classList.add("scroll");
