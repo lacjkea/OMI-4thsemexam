@@ -1,0 +1,25 @@
+@use "../base/colors";
+@use "../base/fonts";
+
+.swiper-wrapper {
+  align-items: center;
+}
+
+.swiper-slide {
+  height: 400px;
+  font-size: 3rem;
+  text-decoration: none;
+  font-size: 3rem;
+  font-weight: bold;
+  color: colors.$font-primary;
+  text-shadow: 2px 4px 3px rgba(179, 175, 175, 0.3);
+}
+
+.link {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}

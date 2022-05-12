@@ -16,7 +16,7 @@
     url("/public/assets/mountain.jpg"); /* The least supported option. */
   background-repeat: no-repeat;
   background-position: center;
-  background-attachment: fixed;
+  // background-attachment: fixed;
   background-size: cover;
 
   img {
@@ -39,7 +39,7 @@
     url("/public/assets/woman-smile.jpg"); /* The least supported option. */
   background-repeat: no-repeat;
   background-position: center;
-  background-attachment: fixed;
+  // background-attachment: fixed;
   background-size: cover;
 
   img {
@@ -54,7 +54,7 @@
 #container-4 {
   background: colors.$font-secondary; /* fallback colour. Make sure this is just one solid colour. */
   background-position: center;
-  background-attachment: fixed;
+  // background-attachment: fixed;
 
   img {
     object-fit: cover;
@@ -134,13 +134,6 @@
     align-content: center;
     justify-content: center;
     align-items: center;
-  }
-  a {
-    text-decoration: none;
-    font-size: 3rem;
-    font-weight: bold;
-    color: colors.$font-primary;
-    text-shadow: 2px 4px 3px rgba(179, 175, 175, 0.3);
   }
 
   #slide-1 {
