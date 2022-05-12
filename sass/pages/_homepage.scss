@@ -16,7 +16,6 @@
     url("/public/assets/mountain.jpg"); /* The least supported option. */
   background-repeat: no-repeat;
   background-position: center;
-  // background-attachment: fixed;
   background-size: cover;
 
   img {
@@ -39,7 +38,6 @@
     url("/public/assets/woman-smile.jpg"); /* The least supported option. */
   background-repeat: no-repeat;
   background-position: center;
-  // background-attachment: fixed;
   background-size: cover;
 
   img {
@@ -51,8 +49,72 @@
   }
 }
 
+#container-6 {
+  background: colors.$primary; /* fallback colour. Make sure this is just one solid colour. */
+  background: -webkit-linear-gradient(
+      rgb(255 255 255 / 96%),
+      rgb(255 255 255 / 62%)
+    ),
+    url("/public/assets/meeting.jpg");
+  background: linear-gradient(rgb(255 255 255 / 96%), rgb(255 255 255 / 62%)),
+    url("/public/assets/meeting.jpg"); /* The least supported option. */
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+
+  img {
+    object-fit: cover;
+  }
+  h1,
+  h3 {
+    color: colors.$font-primary;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  .context {
+    width: 53%;
+    text-align: center;
+    h3 {
+      margin: 0;
+      color: colors.$font-secondary;
+    }
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea,
+  select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  textarea {
+    resize: none;
+    height: 100px;
+  }
+
+  form.form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 420px;
+    align-content: center;
+    height: 300px;
+    justify-content: space-between;
+  }
+}
+
 #container-4 {
-  background: colors.$font-secondary; /* fallback colour. Make sure this is just one solid colour. */
+  background-color: colors.$base; /* fallback colour. Make sure this is just one solid colour. */
   background-position: center;
   // background-attachment: fixed;
 
@@ -140,6 +202,26 @@
     background-image: url("/public/assets/illumkey.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
+  }
+
+  #slide-2 {
+    background-image: url("/public/assets/cirtoenWall.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  #slide-3 {
+    background-image: url("/public/assets/babysamWall.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  #slide-4 {
+    background-image: url("/public/assets/supperofficeWall.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   }
 }
 

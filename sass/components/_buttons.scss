@@ -38,3 +38,15 @@ a.link-button {
   width: 100%;
   left: 0;
 }
+
+button#submit {
+  padding: 13px 50px;
+  background-color: colors.$primary;
+  cursor: pointer;
+  border: 0;
+  color: colors.$font-primary;
+}
+
+button#submit:hover {
+  background-color: colors.$contrast-primary;
+}

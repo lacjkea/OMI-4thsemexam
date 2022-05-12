@@ -27,6 +27,9 @@ export function sliderAnimation() {
   }
 
   function unhover(element) {
-    document.querySelector("p").classList.remove("fade");
+    console.log(element.target.closest(".swiper-slide").id);
+    document
+      .querySelector(`#${element.target.closest(".swiper-slide").id} p`)
+      .classList.remove("fade");
   }
 }
