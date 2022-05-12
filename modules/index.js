@@ -1,12 +1,14 @@
 "use strict";
 
 import { slider } from "./slider";
+import { sliderAnimation } from "./slider";
 
 window.addEventListener("DOMContentLoaded", init);
 
 function init() {
   buttonEvents();
   slider();
+  sliderAnimation();
 }
 
 function buttonEvents() {

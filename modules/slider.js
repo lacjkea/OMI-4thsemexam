@@ -9,3 +9,24 @@ export function slider() {
     },
   });
 }
+
+export function sliderAnimation() {
+  document
+    .querySelectorAll(".link")
+    .forEach((element) => element.addEventListener("mouseover", hover));
+
+  document
+    .querySelectorAll(".link")
+    .forEach((element) => element.addEventListener("mouseout", unhover));
+
+  function hover(element) {
+    console.log(element.target.closest(".swiper-slide").id);
+    document
+      .querySelector(`#${element.target.closest(".swiper-slide").id} p`)
+      .classList.add("fade");
+  }
+
+  function unhover(element) {
+    document.querySelector("p").classList.remove("fade");
+  }
+}

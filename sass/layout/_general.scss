@@ -210,7 +210,7 @@ nav {
 }
 
 .fade {
-  animation: fade 1s ease-out 1;
+  animation: fade 1s ease-out forwards;
 }
 
 @keyframes fade {
@@ -218,6 +218,7 @@ nav {
     opacity: 0;
   }
   100% {
+    visibility: visible;
     opacity: 1;
   }
 }
