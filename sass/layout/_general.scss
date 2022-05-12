@@ -84,6 +84,7 @@ h3 {
   font-size: 1.3rem;
   margin: 0 15rem 0 0;
 }
+
 nav {
   ul {
     list-style: none;
@@ -124,6 +125,32 @@ nav {
   a:hover::after {
     width: 100%;
     left: 0;
+  }
+}
+
+footer {
+  color: colors.$font-primary;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 11rem;
+  justify-content: center;
+  padding: 15px;
+  background-color: colors.$primary;
+  a {
+    color: colors.$font-primary;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: colors.$secondary;
+  }
+
+  ul {
+    list-style: none;
+  }
+  li {
+    margin-bottom: 8px;
   }
 }
 
@@ -242,5 +269,30 @@ nav {
 
   h3 {
     margin: 0;
+  }
+
+  #container-6 form.form {
+    width: 100% !important;
+  }
+
+  .section {
+    margin: 0 2rem 0 2rem;
+  }
+
+  #container-6 .context {
+    width: 100% !important;
+  }
+
+  footer {
+    gap: 0;
+    text-align: center;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    ul {
+      padding: 0;
+    }
   }
 }
