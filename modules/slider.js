@@ -21,7 +21,6 @@ export function slider() {
       1024: {
         slidesPerView: 3,
         spaceBetween: 50,
-        width: 1024,
       },
     },
   });
