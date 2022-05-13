@@ -1,0 +1,122 @@
+@use "../base/colors";
+@use "../base/fonts";
+
+section#section-2 {
+  height: auto !important;
+
+  h2,
+  p {
+    color: colors.$font-secondary;
+    margin-bottom: 25px;
+    line-height: normal;
+  }
+}
+
+.section-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  padding: 20px 0 20px 0;
+  align-items: center;
+  gap: 2rem;
+}
+
+.works-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1080px;
+  z-index: 0;
+}
+
+.snip1482 {
+  position: relative;
+  margin: 10px 20px;
+  min-width: 230px;
+  max-width: 400px;
+  min-height: 420px;
+  width: 100%;
+  color: colors.$font-primary;
+  text-align: right;
+  line-height: 1.4em;
+  font-size: 18px;
+}
+
+.snip1482 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+
+.snip1482 img {
+  position: absolute;
+  right: 0%;
+  top: 50%;
+  opacity: 1;
+  width: 100%;
+  -webkit-transform: translate(0%, -50%);
+  transform: translate(0%, -50%);
+}
+
+.snip1482 figcaption {
+  position: absolute;
+  width: 50%;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  padding: 20px 0 20px 20px;
+  h2 {
+    border-bottom: 1px solid;
+  }
+}
+
+.snip1482 h2,
+.snip1482 p {
+  margin: 0;
+  width: 100%;
+  -webkit-transform: translateX(20px);
+  transform: translateX(20px);
+  opacity: 0;
+}
+
+.snip1482 h2 {
+  text-transform: uppercase;
+}
+
+.snip1482 p {
+  font-size: 0.8em;
+}
+
+.snip1482 a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.snip1482:hover img,
+.snip1482.hover img {
+  width: 55%;
+  right: -10%;
+}
+
+.snip1482:hover figcaption h2,
+.snip1482.hover figcaption h2,
+.snip1482:hover figcaption p,
+.snip1482.hover figcaption p {
+  -webkit-transform: translateX(0px);
+  transform: translateX(0px);
+  opacity: 1;
+}
+
+@media only screen and (max-width: 600px) {
+  .snip1482 {
+    min-height: 300px;
+  }
+}

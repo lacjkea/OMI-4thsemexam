@@ -11,6 +11,7 @@ function init() {
   slider();
   sliderAnimation();
   menuFunction();
+  workFunction();
 }
 
 function buttonEvents() {
