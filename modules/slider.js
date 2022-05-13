@@ -7,6 +7,23 @@ export function slider() {
       el: ".swiper-pagination",
       clickable: true,
     },
+    breakpoints: {
+      390: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        width: 390,
+      },
+      412: {
+        slidesPerView: 1,
+        spaceBetween: 40,
+        width: 412,
+      },
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 50,
+        width: 1024,
+      },
+    },
   });
 }
 
