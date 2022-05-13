@@ -1,0 +1,63 @@
+.option-menu {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  html,
+  body {
+    overflow-x: hidden;
+    height: 100%;
+  }
+
+  body {
+    position: relative;
+  }
+
+  .option-menu {
+    display: flex;
+    flex-direction: column;
+    background: whitesmoke;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    position: fixed;
+    display: none;
+  }
+
+  .option-menu.active {
+    display: flex;
+    flex-direction: column;
+    background: whitesmoke;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    position: fixed;
+    font-size: 2rem;
+    gap: 2rem;
+    list-style: none;
+  }
+
+  .option-menu a {
+    color: black;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-decoration: none;
+  }
+
+  .option-menu a:hover {
+    text-decoration: underline;
+  }
+
+  .button-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 3rem;
+  }
+}

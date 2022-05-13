@@ -2,6 +2,7 @@
 
 import { slider } from "./slider";
 import { sliderAnimation } from "./slider";
+import { menuFunction } from "./menu";
 
 window.addEventListener("DOMContentLoaded", init);
 
@@ -9,6 +10,7 @@ function init() {
   buttonEvents();
   slider();
   sliderAnimation();
+  menuFunction();
 }
 
 function buttonEvents() {
