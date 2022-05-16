@@ -16,7 +16,12 @@ export function slider() {
       412: {
         slidesPerView: 1,
         spaceBetween: 40,
-        width: 412,
+        // width: 412,
+      },
+      360: {
+        slidesPerView: 1,
+        spaceBetween: 40,
+        // width: 412,
       },
       1024: {
         slidesPerView: 3,
