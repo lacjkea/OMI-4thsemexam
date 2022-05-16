@@ -1,0 +1,19 @@
+@use "../base/colors";
+@use "../base/fonts";
+
+#container-contact-1 {
+  #section-1 {
+    height: 100%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #container-contact-1 {
+    #section-1 {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+  }
+}
