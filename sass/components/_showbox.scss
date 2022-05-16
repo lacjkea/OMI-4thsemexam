@@ -49,6 +49,7 @@ section#section-2 {
   box-sizing: border-box;
   -webkit-transition: all 0.35s ease;
   transition: all 0.35s ease;
+  box-shadow: rgb(0 0 0 / 27%) 0px 3px 15px;
 }
 
 .snip1482 img {
@@ -59,6 +60,7 @@ section#section-2 {
   width: 100%;
   -webkit-transform: translate(0%, -50%);
   transform: translate(0%, -50%);
+  height: 100%;
 }
 
 .snip1482 figcaption {
