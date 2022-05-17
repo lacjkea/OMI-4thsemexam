@@ -3,10 +3,13 @@
 
 #container-services-1 {
   background: colors.$primary; /* fallback colour. Make sure this is just one solid colour. */
-  background: -webkit-linear-gradient(rgba(160, 165, 209, 0), colors.$base),
-    url("/public/assets/services.jpg");
-  background: linear-gradient(rgba(160, 165, 209, 0), colors.$base),
-    url("/public/assets/services.jpg"); /* The least supported option. */
+  background: -webkit-linear-gradient(
+      rgb(255 255 255),
+      rgba(255, 255, 255, 0.7411764706)
+    ),
+    url(/public/assets/media.jpg);
+  background: linear-gradient(rgb(255 255 255 / 61%), rgb(255 255 255 / 83%)),
+    url(/public/assets/media.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -16,11 +19,7 @@
   }
   h1,
   h3 {
-    color: colors.$font-primary;
-  }
-
-  .link-button {
-    color: colors.$font-primary;
+    color: colors.$base;
   }
 }
 
@@ -75,14 +74,27 @@ svg {
 #container-services-4 {
   background: #163192;
   background: -webkit-linear-gradient(
-      rgb(255 255 255),
+      rgb(255, 255, 255),
       rgba(255, 255, 255, 0.7411764706)
     ),
     url(/public/assets/data.jpg);
-  background: linear-gradient(rgb(255 255 255 / 61%), rgb(255 255 255 / 83%)),
+  background: linear-gradient(rgb(0 0 0 / 61%), rgb(0 0 0 / 83%)),
     url(/public/assets/data.jpg);
   background-repeat: no-repeat;
   background-position: right;
   background-size: contain;
-  color: colors.$base;
+  color: colors.$font-primary;
+
+  #section-4 {
+    justify-content: flex-end;
+    h2 {
+      text-align: right;
+      margin: 0 0 0 10px;
+    }
+
+    h3 {
+      margin: 0 0 0 15rem;
+      text-align: right;
+    }
+  }
 }
