@@ -1,0 +1,25 @@
+@use "../base/colors";
+@use "../base/fonts";
+
+#container-services-1 {
+  background: colors.$primary; /* fallback colour. Make sure this is just one solid colour. */
+  background: -webkit-linear-gradient(rgba(160, 165, 209, 0), colors.$base),
+    url("/public/assets/services.jpg");
+  background: linear-gradient(rgba(160, 165, 209, 0), colors.$base),
+    url("/public/assets/services.jpg"); /* The least supported option. */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  img {
+    object-fit: cover;
+  }
+  h1,
+  h3 {
+    color: colors.$font-primary;
+  }
+
+  .link-button {
+    color: colors.$font-primary;
+  }
+}
