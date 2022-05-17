@@ -23,3 +23,66 @@
     color: colors.$font-primary;
   }
 }
+
+#container-services-2 {
+  background: #163192;
+  background: -webkit-linear-gradient(
+      rgb(255 255 255),
+      rgba(255, 255, 255, 0.7411764706)
+    ),
+    url(/public/assets/boat.jpg);
+  background: linear-gradient(rgb(255 255 255 / 61%), rgb(255 255 255 / 83%)),
+    url(/public/assets/boat.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#container-services-3 {
+  background: #163192;
+  background: -webkit-linear-gradient(
+      rgba(255, 255, 255, 0.32),
+      rgba(255, 255, 255, 0.7411764706)
+    ),
+    url(/public/assets/ideas.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.71), rgb(0 0 0 / 39%)),
+    url(/public/assets/ideas.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: colors.$font-primary;
+
+  #section-3 {
+    justify-content: flex-end;
+    h2 {
+      text-align: right;
+      margin: 0 0 0 10px;
+    }
+
+    h3 {
+      margin: 0 0 0 15rem;
+      text-align: right;
+    }
+  }
+}
+
+svg {
+  position: absolute;
+  height: 102.4%;
+  width: 100%;
+}
+
+#container-services-4 {
+  background: #163192;
+  background: -webkit-linear-gradient(
+      rgb(255 255 255),
+      rgba(255, 255, 255, 0.7411764706)
+    ),
+    url(/public/assets/data.jpg);
+  background: linear-gradient(rgb(255 255 255 / 61%), rgb(255 255 255 / 83%)),
+    url(/public/assets/data.jpg);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+  color: colors.$base;
+}
