@@ -1,0 +1,52 @@
+@use "../base/colors";
+@use "../base/fonts";
+
+#container-approach-1 {
+  background: colors.$primary; /* fallback colour. Make sure this is just one solid colour. */
+  background: url(/public/assets/climb.jpg);
+  background: url(/public/assets/climb.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  img {
+    object-fit: cover;
+  }
+  h1,
+  h3 {
+    color: colors.$base;
+  }
+}
+
+#container-approach-3 {
+  background: #163192;
+  background: url(/public/assets/girl.jpg);
+  background: url(/public/assets/girl.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: colors.$font-secondary;
+
+  #section-3 {
+    justify-content: flex-end;
+    h2 {
+      text-align: right;
+      margin: 0 0 0 10px;
+    }
+
+    h3 {
+      margin: 0 0 0 15rem;
+      text-align: right;
+    }
+  }
+}
+
+#container-approach-2 {
+  background: #163192;
+  background: url(/public/assets/chess.jpg);
+  background: url(/public/assets/chess.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: colors.$font-primary;
+}
