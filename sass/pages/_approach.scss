@@ -20,8 +20,10 @@
 
 #container-approach-3 {
   background: #163192;
-  background: url(/public/assets/girl.jpg);
-  background: url(/public/assets/girl.jpg);
+  background: -webkit-linear-gradient(rgba(255, 255, 255, 0.103), white),
+    url(/public/assets/girl.jpg);
+  background: -webkit-linear-gradient(rgb(255 255 255), #ffffff47),
+    url(/public/assets/girl.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -98,4 +100,19 @@
 }
 
 @media only screen and (max-width: 600px) {
+  #container-approach-1 {
+    background-position-x: -479px;
+  }
+
+  #container-approach-3 {
+    background-position: unset;
+
+    #section-3 {
+      justify-content: start;
+    }
+  }
+
+  #container-approach-2 {
+    background-position-x: -482px;
+  }
 }
