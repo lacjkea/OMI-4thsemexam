@@ -130,7 +130,7 @@
   .service-icon-1 {
     width: 150px;
     height: 150px;
-    background: url("/public/assets/creative.svg");
+    background: url("/public/assets/create.svg");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -138,7 +138,7 @@
   .service-icon-2 {
     width: 150px;
     height: 150px;
-    background: url("/public/assets/marketing.svg");
+    background: url("/public/assets/market.svg");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -146,7 +146,7 @@
   .service-icon-3 {
     width: 150px;
     height: 150px;
-    background: url("/public/assets/development.svg");
+    background: url("/public/assets/gear.svg");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -175,8 +175,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 25px;
+    // gap: 25px;
     background: transparent;
+    width: 210px;
+
+    p {
+      color: colors.$font-primary;
+    }
   }
   h4 {
     font-weight: normal;
@@ -329,7 +334,11 @@ $animationSpeed: 40s;
     section#section-4,
     article.service {
       gap: 30px !important;
-      flex-direction: column !important;
+      flex-direction: row !important;
+      justify-content: center;
+      align-self: end;
+      height: 100%;
+      padding: 3rem 0 2rem 0;
     }
     .service-icon-1,
     .service-icon-2,
