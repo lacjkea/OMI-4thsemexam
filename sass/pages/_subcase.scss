@@ -1,0 +1,105 @@
+@use "../base/colors";
+@use "../base/fonts";
+
+#container-illumkey-1 {
+  background: colors.$primary; /* fallback colour. Make sure this is just one solid colour. */
+  background: -webkit-linear-gradient(
+      rgb(255, 255, 255),
+      rgba(255, 255, 255, 0.7411764706)
+    ),
+    url(/public/assets/otl.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.61), rgba(0, 0, 0, 0.83)),
+    url(/public/assets/otl.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  img {
+    object-fit: cover;
+  }
+  h1,
+  h3 {
+    color: colors.$font-primary;
+  }
+}
+
+#container-illumkey-2 {
+  background: transparent;
+  color: colors.$font-secondary;
+
+  img {
+    width: 500px;
+  }
+
+  #section-2 {
+    width: 30%;
+    h2 {
+      text-align: left;
+      margin: 0;
+    }
+
+    h3 {
+      margin: 0 0 0 0;
+      text-align: left;
+      border-top: 1px solid;
+      padding-top: 25px;
+    }
+  }
+}
+
+#container-illumkey-3 {
+  background: transparent;
+  color: colors.$font-secondary;
+
+  img {
+    width: 500px;
+  }
+
+  #section-3 {
+    width: 30%;
+    h2 {
+      text-align: left;
+      margin: 0;
+    }
+
+    h3 {
+      margin: 0 0 0 0;
+      text-align: left;
+      border-top: 1px solid;
+      padding-top: 25px;
+    }
+  }
+}
+
+#container-illumkey-4 {
+  background: transparent;
+  color: colors.$font-secondary;
+
+  img {
+    width: 500px;
+  }
+
+  #section-4 {
+    width: 30%;
+    h2 {
+      text-align: left;
+      margin: 0;
+    }
+
+    h3 {
+      margin: 0 0 0 0;
+      text-align: left;
+      border-top: 1px solid;
+      padding-top: 25px;
+    }
+  }
+}
+
+#container-5 {
+  h2 {
+    margin: 0 4rem 0 4rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+}
