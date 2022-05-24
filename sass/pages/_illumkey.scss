@@ -112,4 +112,10 @@
 }
 
 @media only screen and (max-width: 600px) {
+  #container-illumkey-2 #section-2,
+  #container-illumkey-3 #section-3,
+  #container-illumkey-4 #section-4 {
+    width: 100%;
+    height: 400px;
+  }
 }
