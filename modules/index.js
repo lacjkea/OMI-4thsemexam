@@ -3,6 +3,7 @@
 import { slider } from "./slider";
 import { sliderAnimation } from "./slider";
 import { menuFunction } from "./menu";
+import { reveal } from "./scroll";
 
 window.addEventListener("DOMContentLoaded", init);
 
@@ -11,7 +12,7 @@ function init() {
   slider();
   sliderAnimation();
   menuFunction();
-  // workFunction();
+  reveal();
 }
 
 function buttonEvents() {
