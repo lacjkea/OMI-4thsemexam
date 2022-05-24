@@ -5,6 +5,7 @@ import { sliderAnimation } from "./slider";
 import { menuFunction } from "./menu";
 import { reveal } from "./scroll";
 
+window.addEventListener("scroll", reveal);
 window.addEventListener("DOMContentLoaded", init);
 
 function init() {

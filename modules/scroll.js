@@ -11,7 +11,14 @@ export function reveal() {
     } else {
       reveals[i].classList.remove("active");
     }
+
+    if (
+      /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+        navigator.userAgent
+      )
+    ) {
+      console.log(reveals[i]);
+      reveals[i].classList.add("active");
+    }
   }
 }
-
-window.addEventListener("scroll", reveal);
