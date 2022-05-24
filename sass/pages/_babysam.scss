@@ -1,15 +1,15 @@
 @use "../base/colors";
 @use "../base/fonts";
 
-#container-illumkey-1 {
+#container-babysam-1 {
   background: colors.$primary; /* fallback colour. Make sure this is just one solid colour. */
   background: -webkit-linear-gradient(
       rgb(255, 255, 255),
       rgba(255, 255, 255, 0.7411764706)
     ),
-    url(/public/assets/otl.jpg);
+    url(/public/assets/babysam-banner.jpg);
   background: linear-gradient(rgba(0, 0, 0, 0.61), rgba(0, 0, 0, 0.83)),
-    url(/public/assets/otl.jpg);
+    url(/public/assets/babysam-banner.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -23,7 +23,7 @@
   }
 }
 
-#container-illumkey-2 {
+#container-babysam-2 {
   background: transparent;
   color: colors.$font-secondary;
 
@@ -47,7 +47,7 @@
   }
 }
 
-#container-illumkey-3 {
+#container-babysam-3 {
   background: transparent;
   color: colors.$font-secondary;
 
@@ -71,7 +71,7 @@
   }
 }
 
-#container-illumkey-4 {
+#container-babysam-4 {
   background: transparent;
   color: colors.$font-secondary;
 
@@ -101,16 +101,19 @@
   }
 }
 
-.background-wrapper {
+.background-wrapper-babysam {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1000%26quot%3b)' fill='none'%3e%3cpath d='M 0%2c43 C 96%2c64.8 288%2c150.6 480%2c152 C 672%2c153.4 768%2c30.4 960%2c50 C 1152%2c69.6 1344%2c210 1440%2c250L1440 560L0 560z' fill='rgba(24%2c 74%2c 126%2c 0.18)'%3e%3c/path%3e%3cpath d='M 0%2c512 C 72%2c481.6 216%2c375.6 360%2c360 C 504%2c344.4 576%2c433 720%2c434 C 864%2c435 936%2c366.6 1080%2c365 C 1224%2c363.4 1368%2c413.8 1440%2c426L1440 560L0 560z' fill='rgba(34%2c 100%2c 171%2c 0.28)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1000'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
   background-size: cover;
 }
 
 @media only screen and (max-width: 600px) {
-  #container-illumkey-2 #section-2,
-  #container-illumkey-3 #section-3,
-  #container-illumkey-4 #section-4 {
+  #container-babysam-2 #section-2,
+  #container-babysam-3 #section-3,
+  #container-babysam-4 #section-4,
+  #section-2-item,
+  #section-3-item,
+  #section-4-item {
     width: 100%;
-    height: 400px;
+    height: 500px;
   }
 }
