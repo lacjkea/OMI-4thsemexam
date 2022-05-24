@@ -1,15 +1,15 @@
 @use "../base/colors";
 @use "../base/fonts";
 
-#container-illumkey-1 {
+#container-superoffice-1 {
   background: colors.$primary; /* fallback colour. Make sure this is just one solid colour. */
   background: -webkit-linear-gradient(
       rgb(255, 255, 255),
       rgba(255, 255, 255, 0.7411764706)
     ),
-    url(/public/assets/otl.jpg);
+    url(/public/assets/superoffice-banner.jpg);
   background: linear-gradient(rgba(0, 0, 0, 0.61), rgba(0, 0, 0, 0.83)),
-    url(/public/assets/otl.jpg);
+    url(/public/assets/superoffice-banner.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -23,7 +23,7 @@
   }
 }
 
-#container-illumkey-2 {
+#container-superoffice-2 {
   background: transparent;
   color: colors.$font-secondary;
 
@@ -47,7 +47,7 @@
   }
 }
 
-#container-illumkey-3 {
+#container-superoffice-3 {
   background: transparent;
   color: colors.$font-secondary;
 
@@ -71,7 +71,7 @@
   }
 }
 
-#container-illumkey-4 {
+#container-superoffice-4 {
   background: transparent;
   color: colors.$font-secondary;
 
@@ -101,16 +101,19 @@
   }
 }
 
-.background-wrapper {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1011%26quot%3b)' fill='none'%3e%3cpath d='M 0%2c119 C 96%2c102.4 288%2c37.4 480%2c36 C 672%2c34.6 768%2c113 960%2c112 C 1152%2c111 1344%2c47.2 1440%2c31L1440 560L0 560z' fill='rgba(81%2c 170%2c 225%2c 0.16)'%3e%3c/path%3e%3cpath d='M 0%2c316 C 72%2c295 216%2c214.8 360%2c211 C 504%2c207.2 576%2c287.8 720%2c297 C 864%2c306.2 936%2c259.4 1080%2c257 C 1224%2c254.6 1368%2c279.4 1440%2c285L1440 560L0 560z' fill='rgba(24%2c 74%2c 126%2c 0.18)'%3e%3c/path%3e%3cpath d='M 0%2c539 C 72%2c511 216%2c413.4 360%2c399 C 504%2c384.6 576%2c471.4 720%2c467 C 864%2c462.6 936%2c376 1080%2c377 C 1224%2c378 1368%2c453 1440%2c472L1440 560L0 560z' fill='rgba(34%2c 100%2c 171%2c 0.28)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1011'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+.background-wrapper-superoffice {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1007%26quot%3b)' fill='none'%3e%3cpath d='M 0%2c57 C 96%2c78.8 288%2c161.8 480%2c166 C 672%2c170.2 768%2c85.2 960%2c78 C 1152%2c70.8 1344%2c119.6 1440%2c130L1440 560L0 560z' fill='rgba(81%2c 170%2c 225%2c 0.16)'%3e%3c/path%3e%3cpath d='M 0%2c318 C 72%2c301.2 216%2c228.6 360%2c234 C 504%2c239.4 576%2c345.4 720%2c345 C 864%2c344.6 936%2c235.8 1080%2c232 C 1224%2c228.2 1368%2c307.2 1440%2c326L1440 560L0 560z' fill='rgba(24%2c 74%2c 126%2c 0.18)'%3e%3c/path%3e%3cpath d='M 0%2c457 C 72%2c470 216%2c523.6 360%2c522 C 504%2c520.4 576%2c455.4 720%2c449 C 864%2c442.6 936%2c500.2 1080%2c490 C 1224%2c479.8 1368%2c416.4 1440%2c398L1440 560L0 560z' fill='rgba(34%2c 100%2c 171%2c 0.28)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1007'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
   background-size: cover;
 }
 
 @media only screen and (max-width: 600px) {
-  #container-illumkey-2 #section-2,
-  #container-illumkey-3 #section-3,
-  #container-illumkey-4 #section-4 {
+  #container-superoffice-2 #section-2,
+  #container-superoffice-3 #section-3,
+  #container-superoffice-4 #section-4,
+  #section-2-item,
+  #section-3-item,
+  #section-4-item {
     width: 100%;
-    height: 400px;
+    height: 500px;
   }
 }

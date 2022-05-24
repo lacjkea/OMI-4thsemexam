@@ -154,6 +154,13 @@ footer {
   }
 }
 
+.background-wrapper img,
+.background-wrapper-citroen img,
+.background-wrapper-superoffice img,
+.background-wrapper-babysam img {
+  box-shadow: rgb(0 0 0 / 45%) 0px 25px 20px -20px;
+}
+
 // animation
 
 .article:hover {
